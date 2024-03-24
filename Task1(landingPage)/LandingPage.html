@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page Using html and css</title>
+<style type="text/css">
+    *{margin: 0;padding: 0; box-sizing:border-box ;}
+    header{
+        background-color: #ffffff;
+        color: black;
+        width:100%;
+        height: 100vh;
+        text-align: center;
+    }
+    nav{
+        width: 100px;;
+        height: 100vh;
+    }
+    .main1{
+        background-image:url('bg3.avif');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+        width:100%;
+        min-height: 80vh; /* Minimum height to ensure content is visible */
+        
+        position: relative;
+        text-align: center;
+    }
+    .main1-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main1-content h1{
+        font-size: 4rem;
+        color: Black;
+        font-family:sans-serif;
+        font-weight: normal; 
+        font-style: normal;
+    }
+    .main1-content p{
+        font-size: 1.0rem;
+        color: Black;
+        font-family:sans-serif;
+        font-weight: bold; 
+        font-style: normal;
+    }
+    .main1-content a{
+        font-size: 1.1rem;
+        color: white;
+        font-family:sans-serif;
+        font-weight: normal; 
+        font-style: normal;
+        text-decoration: none;
+        
+        background-color: rgb(6, 104, 60);
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+    .main1-content p.unbold {
+        font-weight: bold;
+        font-size: .6rem;
+        font-family: sans-serif;
+        letter-spacing: .8px;
+        margin-top: 10px;
+    }
+    .logo{
+        text-align: left;
+    }
+    .logo img{
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+        
+    }
+    .main2{
+        display: flex;
+        background-color: #ffffff;
+        color: black;
+        width:100%;
+        min-height: 40vh; /* Minimum height to ensure content is visible */
+        font-size: larger;
+        position: relative;
+    }
+    .main2 img{
+        width: 280px;
+        height: 250px;
+        margin-left: 400px;
+        margin-right: 150px;
+        margin-top: 200px;
+    }
+
+    .main2 h1{
+        font-size: 2.5rem;
+        color: Black;
+        font-family:serif;
+        font-weight: bold; 
+        font-style: normal;
+        margin-top: 200px;
+        line-height: 1.0;
+    }
+    .main2-content{
+        color: Black;
+        font-family:serif;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+    }
+    .main2-content p{
+        margin-top: 20px;
+        font-size: 1.0rem;
+        color: Black;
+        font-family:serif;
+        font-weight: medium; 
+        font-style: normal;
+        line-height: 1.2;
+    }
+    .main2-content a{
+        font-size: 1.1rem;
+
+        color: white;
+        font-family:sans-serif;
+        font-weight: normal; 
+        font-style: normal;
+        text-decoration: none;
+        
+        background-color: rgb(6, 104, 60);
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-top: 30px;
+        width: 180px;
+        height: 40px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+
+    .main3{
+        display: flex;
+        background-color: #ffffff;
+        color: black;
+        width:100%;
+       /* min-height: 30vh; /* Minimum height to ensure content is visible */
+        font-size: larger;
+        position: relative;
+    }
+    .main3 img{
+        width: 280px;
+        height: 250px;
+        margin-top: 200px;
+        
+    }
+    .main3 h1{
+        font-size: 2.5rem;
+        color: Black;
+        font-family:serif;
+        font-weight: bold; 
+        font-style: normal;
+        margin-top: 200px;
+        line-height: 1.0;
+    }
+    .main3-content{
+        color: Black;
+        font-family:serif;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        margin-left: 400px;
+        margin-right: 130px;
+    }
+    .main3-content p{
+        margin-top: 20px;
+        font-size: 1.0rem;
+        color: Black;
+        font-family:serif;
+        font-weight: medium; 
+        font-style: normal;
+        line-height: 1.2;
+    }
+    .main3-content a{
+        font-size: 1.1rem;
+
+        color: white;
+        font-family:sans-serif;
+        font-weight: normal; 
+        font-style: normal;
+        text-decoration: none;
+        
+        background-color: rgb(6, 104, 60);
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-top: 30px;
+        width: 180px;
+        height: 40px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+
+    .main4{
+        display: flex;
+        background-color: #ffffff;
+        color: black;
+        width:100%;
+        min-height: 40vh; /* Minimum height to ensure content is visible */
+        font-size: larger;
+        position: relative;
+        
+        
+    }
+    
+
+    .main4 h1{
+        font-size: 2.5rem;
+        color: Black;
+        font-family:serif;
+        font-weight: bold; 
+        font-style: normal;
+        margin-top: 100px; 
+        line-height: 1.0;
+    }
+    .main4-content{
+        color: Black;
+        font-family:serif;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+    .main4-content p{
+        margin-top: 20px;
+        font-size: 1.0rem;
+        color: Black;
+        font-family:serif;
+        font-weight: medium; 
+        font-style: normal;
+        line-height: 1.2;
+    }
+    .main4-content a{
+        font-size: 1.1rem;
+        color: green;
+        font-family:sans-serif;
+        font-weight: normal; 
+        font-style: normal;
+        text-decoration: underline;
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+
+   
+    .main4-img4{
+        justify-content: center;
+        width: 280px;
+        height: 250px;
+        margin-left: 400px;
+        margin-right: 150px;
+        margin-top: 100px;
+    }
+
+
+    .main4 .icons{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+       
+    }
+
+    .main4 .icons img{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+   
+    .main4-content .butt{
+        font-size: 1.1rem;
+        color: white;
+        font-family:sans-serif;
+        font-weight: normal; 
+        font-style: normal;
+        text-decoration: none;
+
+        background-color: rgb(6, 104, 60);
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-top: 15px;
+        width: 180px;
+        height: 40px;
+        text-align: center;
+        line-height: 20px;
+    
+    }
+
+    .main5{
+        display: flex;
+        background-color: #ffffff;
+        color: black;
+        width:100%;
+        min-height: 40vh; /* Minimum height to ensure content is visible */
+        font-size: larger;
+        position: relative;
+        text-align: center;
+        margin-bottom: 70px;
+        
+    }
+    .part1{
+        margin-top: 100px;
+        margin-left: 350px;
+    }
+    .main5 h1{
+        font-size: 1.8rem;
+        color: Black;
+        font-family:serif;
+        font-weight: bold; 
+        font-style: normal;
+        line-height: 1.0;
+    }
+    .main5 p{
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: Black;
+        font-family:serif;
+        font-weight: medium; 
+        font-style: normal;
+        line-height: 1.2;
+    }
+
+    .main5 img{
+        width: 120;
+        height: 120px;
+        
+    }
+    .part2{
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .part3{
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    
+    .advantages{
+        font-size: 1.1rem;
+        color: green;
+        font-family:sans-serif;
+        font-weight: normal; 
+        font-style: normal;
+        text-decoration: underline;
+       
+        padding: 20px 20px;
+        margin-left: 720px;
+        
+    }
+</style>
+
+</head>
+<body>
+   
+  
+  <div class="main1">
+
+    <div class="logo">
+        <img src="eplogo.png" alt="logo">
+    </div> 
+
+    <div class="main1-content">
+        <h1>The Vpn that just works</h1>
+        <br>
+        <p>Go further with the #1 trusted leader in VPN</p>
+        <br> <br>
+        <a href="#">Get Express VPN -></a>
+        <br> <br>
+        <p class="unbold">30-DAY MONEY-BACK GUARANTEE</p>
+    </div>
+  </div>
+
+
+
+  <div class="main2">
+    
+        <img src="main2image.PNG" alt="image">
+
+        <div class="main2-content">
+            
+            <h1>Secure access,<br>worldwide</h1>
+            <p>Connect reliably from anywhere, to anywhere. Our network of <br> 
+                high-speed servers across 94 countries puts you in conrtol.</p>
+
+            <a href="#">Get ExpressVPN</a>
+        </div>
+    
+
+   
+  </div>
+
+
+  <div class="main3">
+    
+        <div class="main3-content">
+            
+            <h1>One click to a safer<br>internet</h1>
+            <p>Going online doesn't have to mean being exposed.Whether<br> 
+                you're shopping from your desk or just connecting at a cafe,<br>
+                keep your personal information more private and secure.</p>
+
+            <a href="#">Get ExpressVPN</a>
+
+        </div>
+
+        <img src="main3image.PNG" alt="image">
+
+
+  </div>
+
+
+  <div class="main4">
+
+    
+
+    <img src="main4image.PNG" alt="image" class="main4-img4">
+
+
+        <div class="main4-content">
+            
+            <h1>Use ExpressVPN on<br>every device</h1>
+            <p>Phone, tablet, computer,router--no matter where you are or<br> 
+                what devices you're using, a single ExpressVPN subscription<br>
+                has got you covered.</p>
+
+           
+            
+
+
+            <div class = "icons">
+            
+                <img src="windowsIcon.webp" alt="logo" >
+                <img src="appleLogo.webp" alt="logo" >
+                <img src="androidlogo.webp" alt="logo" >
+                
+            </div> 
+
+            <a href="#"> See all apps ></a>
+            <a href="#" class="butt">Get ExpressVPN</a>
+
+        </div>
+
+        
+        
+
+        
+  </div>
+
+
+    <div class="main5">
+        
+        <div class="part1">
+            <img src="part1logo.PNG" alt="image">
+            <h1>Stronger data<br>protection</h1>
+            <p>Take charge of your online privacy and<br> security with best-in-class encryption.</p>
+        </div>
+
+        <div class="part2">
+            <img src="part2logo.PNG" alt="image">
+            <h1>Works seemlessly<br>everywhere</h1>
+            <p>Experience the internet the way it was meant to be.<br> 
+                On the go, or on your couch.</p>
+        </div>
+
+        <div class="part3">
+            <img src="part3logo.PNG" alt="image">
+            <h1>Lightning-quick<br>connectivity</h1>
+            <p>Our VPN network is built for speed, powered<br> 
+                by next generation technology.</p>
+        </div>
+
+            
+    </div>
+
+ <div>
+    <a href="#" class="advantages">See more advantages ></a>
+ </div>
+
+
+</body>
+</html>
